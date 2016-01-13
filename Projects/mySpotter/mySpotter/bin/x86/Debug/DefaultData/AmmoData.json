@@ -1,0 +1,75 @@
+﻿{
+    "Ammo": [
+        {
+
+            "Name": ".22",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/22AmmoPic.jpg"
+
+
+        },
+        {
+
+            "Name": ".22 Long",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/22LongAmmoPic.jpg"
+
+
+        },
+        {
+
+            "Name": ".22 Short",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/22ShortAmmoPic.jpg"
+
+
+        },
+        {
+
+            "Name": ".280",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/223AmmoPic.jpeg"
+
+
+        },
+        {
+            "Name": ".50",
+            "Weight": 20,
+            "Velocity": 10000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/50calAmmoPic.png"
+        },
+        {
+            "Name": ".38",
+            "Weight": 20,
+            "Velocity": 10000,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/38Special.jpg"
+                
+        },
+        {
+            "Name": "?",
+            "Weight": 3,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+            
+        },
+
+        {
+            "Name": ".254",
+            "Weight": 3,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+        },
+        {
+            "Name":  ".45",
+            "Weight": 1,
+            "Velocity": 1500,
+            "ImagePath": "ms-appx:///Assets/AmmoPics/45ACPAmmoPic.jpg"
+        }
+
+    ]
+     
+}

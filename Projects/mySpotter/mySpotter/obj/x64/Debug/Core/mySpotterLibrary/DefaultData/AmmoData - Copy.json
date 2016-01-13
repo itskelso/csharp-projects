@@ -1,0 +1,75 @@
+﻿{
+    "Ammo": [
+        {
+
+            "Name": ".22",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+
+
+        },
+        {
+
+            "Name": ".22 Long",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+
+
+        },
+        {
+
+            "Name": ".22 Short",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+
+
+        },
+        {
+
+            "Name": ".280",
+            "Weight": 2,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+
+
+        },
+        {
+            "Name": ".50",
+            "Weight": 20,
+            "Velocity": 10000,
+            "ImagePath": "Assets/DarkGray.png"
+        },
+        {
+            "Name": ".38",
+            "Weight": 20,
+            "Velocity": 10000,
+            "ImagePath": "Assets/DarkGray.png"
+                
+        },
+        {
+            "Name": "?",
+            "Weight": 3,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+            
+        },
+
+        {
+            "Name": ".254",
+            "Weight": 3,
+            "Velocity": 1000,
+            "ImagePath": "Assets/DarkGray.png"
+        },
+        {
+            "Name":  ".45",
+            "Weight": 1,
+            "Velocity": 1500,
+            "ImagePath": "Assets/DarkGray.png"
+        }
+
+    ]
+     
+}

@@ -1,0 +1,70 @@
+﻿<Page
+    x:Class="mySpotter.Views.SessionPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mySpotter"
+    xmlns:viewmodels="using:mySpotterLibrary.ViewModels"
+    xmlns:views="using:mySpotter.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="540"
+    d:DesignWidth="860"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <viewmodels:SessionViewModel x:Name="SessionViewModel"/>
+        
+    </Page.Resources>
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  DataContext="{StaticResource SessionViewModel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:Name="currentImageinView" Stretch="Uniform" DataContext="{Binding }" Source="{Binding MyImageSource}" Grid.Column="1">
+            
+                
+            
+        </Image>
+
+        <Grid Grid.Row="1"  >
+            <views:UserGunSetupView x:Name="model" DataContext="{Binding Source={StaticResource SessionViewModel},Path=UserSetup}"  />
+        </Grid>
+
+        
+            
+        
+        <RelativePanel Grid.Column="1" Grid.Row="1">
+            <StackPanel x:Name="ButtonStackPanel" VerticalAlignment="Stretch">
+                <Button  x:Name="ConnectButton" Content="Connect" Command="{Binding ConnectToPiCommand}"/>
+                <Button Content="Shot Taken" Command="{Binding SendRefPhotoCommand}" CommandParameter="{Binding Dispatcher}" />
+                <Button Content="Just want to make a photo" Click="Button_Click"/>
+                <Button x:Name="TestButton1" Content="Test Button(Connect)" Click="TestButton1_Click"/>
+                <Button x:Name="TestButton2" Content="Test Button(Shot Taken)" Click="TestButton2_Click"/>
+            </StackPanel>
+
+            <ListView x:Name="LogBlock" ItemsSource="{Binding Log}" RelativePanel.RightOf="ButtonStackPanel" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                <ListView.Header>
+                    <TextBlock Text="Log"/>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid VerticalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Message}"/>
+                            <TextBlock Grid.Column="1" Text="{Binding TimeStamp}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </RelativePanel>
+    </Grid>
+</Page>

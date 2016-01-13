@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\obj\x86\Release\ilc\intermediate\ILTransformed\mySpotter.metadata"
+/gvmAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\obj\x86\Release\ilc\intermediate\ILTransformed\mySpotter.csv"
+/sharedGenericsMode StandardHeuristics
+/in "C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\obj\x86\Release\ilc\intermediate\ILTransformed\mySpotter.ilexe"
+/out "C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\obj\x86\Release\ilc\intermediate\MDIL\mySpotter.mdilexe"

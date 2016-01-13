@@ -1,0 +1,2 @@
+C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\mySpotter.csproj;x86
+C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotterLibrary\mySpotterLibrary.csproj;x86

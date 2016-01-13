@@ -1,0 +1,37 @@
+﻿{
+    "Scopes": [
+        {
+            "Name": "X2",
+            "RecommendedDistance": "100",
+            "ImagePath": "Assets/DarkGray.png"
+        },
+
+        {
+            "Name": "X4",
+            "RecommendedDistance": "150",
+            "ImagePath": "Assets/DarkGray.png"
+        },
+
+        {
+            "Name": "X6",
+            "RecommendedDistance": "175",
+            "ImagePath": "Assets/DarkGray.png"
+        },
+
+        {
+            "Name": "X10",
+            "RecommendedDistance": "400",
+            "ImagePath": "Assets/DarkGray.png"
+        },
+
+        { 
+            "Name": "No Scope",
+            "RecommendedDistance": "50",
+            "ImagePath": "Assets/DarkGray.png"
+        }
+
+
+    ] 
+
+    
+}

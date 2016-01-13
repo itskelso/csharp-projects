@@ -1,0 +1,195 @@
+﻿<UserControl
+    x:Class="mySpotter.Views.UserGunSetupView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mySpotter.Views"
+    xmlns:viewmodels="using:mySpotterLibrary.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
+    
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <UserControl.Resources>
+        <viewmodels:UserGunSetupViewModel x:ConnectionId='1' x:Name="UserSetupViewModel"/>
+        <CollectionViewSource x:ConnectionId='2' x:Name="gungroupssource" IsSourceGrouped="True" Source="{Binding Source={StaticResource UserSetupViewModel}, Path=Groups.GunGroups}" ItemsPath="Guns"/>
+        
+    </UserControl.Resources>
+
+    
+    
+        <Grid x:ConnectionId='3' x:Name="rootGrid" DataContext="{StaticResource UserSetupViewModel}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                
+                <ColumnDefinition Width="2*"/>
+                
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="Auto"/>
+                
+                
+            </Grid.RowDefinitions>
+
+        <TextBox x:ConnectionId='4' x:Name="SetupNameTextBox" PlaceholderText="Give it a name." 
+                 IsEnabled="{Binding IsEditable}"  Text="{Binding Setup.SetupName,UpdateSourceTrigger=PropertyChanged}" 
+                 Grid.Row="0" 
+                 Grid.ColumnSpan="5" 
+                 HorizontalAlignment="Left"
+                 
+                 VerticalAlignment="Top" >
+            <Interactivity:Interaction.Behaviors>
+                <Core:EventTriggerBehavior EventName="LostFocus">
+                    <Core:CallMethodAction MethodName="SetNameCommand" 
+                TargetObject="{Binding Mode=OneWay}" />
+                </Core:EventTriggerBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </TextBox>
+
+
+        <Button x:ConnectionId='5' x:Name="GunButton" Content="{Binding Setup.Gun.Name, Mode=TwoWay,FallbackValue='Select a Gun!'}" Grid.ColumnSpan="3" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  >
+            
+            <Button.Flyout>
+                    <Flyout x:ConnectionId='11' Placement="Full"                       >
+                        <Flyout.Content>
+                    
+                            <GridView x:ConnectionId='12' x:Name="GunGridView"  
+                                          ItemTemplate="{StaticResource Standard310x260ItemTemplate}" 
+                                          ItemsSource="{Binding Source={StaticResource gungroupssource}, Mode=TwoWay}"
+                                          IsItemClickEnabled="{Binding IsEditable}"
+                                          SelectionMode="None"
+                                          
+                                          >
+                            <Interactivity:Interaction.Behaviors>
+                                <Core:EventTriggerBehavior EventName="ItemClick">
+                                    <Core:CallMethodAction MethodName="SelectCommand" 
+                TargetObject="{Binding Mode=OneWay}" />
+                                </Core:EventTriggerBehavior>
+                            </Interactivity:Interaction.Behaviors>
+
+                            <GridView.GroupStyle>
+
+
+                                <GroupStyle>
+
+
+                                    <GroupStyle.HeaderTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Name}"/>
+
+                                        </DataTemplate>
+                                    </GroupStyle.HeaderTemplate>
+                                
+                                </GroupStyle>
+                                </GridView.GroupStyle>
+
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <ItemsWrapGrid Orientation="Vertical"/>
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                                
+                            </GridView>
+                        </Flyout.Content>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+
+            <Button x:ConnectionId='6' x:Name="AmmoButton" Content="{Binding Setup.Ammo.Name}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
+                <Button.Flyout>
+                    <Flyout Placement="Top">
+                        <Flyout.Content>
+                            <GridView x:ConnectionId='10' x:Name="AmmoGridView" 
+                                          ItemTemplate="{StaticResource Standard310x260ItemTemplate}" 
+                                          ItemsSource="{Binding Setup.Gun.PossibleAmmo}"
+                                          IsItemClickEnabled="{Binding IsEditable}"
+                                          
+                                          
+                                                                                      
+                                          >
+                            <Interactivity:Interaction.Behaviors>
+                                <Core:EventTriggerBehavior EventName="ItemClick">
+                                    <Core:CallMethodAction MethodName="SelectAmmoCommand" 
+                TargetObject="{Binding Mode=OneWay}" />
+                                </Core:EventTriggerBehavior>
+                            </Interactivity:Interaction.Behaviors>
+                            <GridView.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Name}"/>
+                                            </DataTemplate>
+                                        </GroupStyle.HeaderTemplate>
+                                    </GroupStyle>
+                                </GridView.GroupStyle>
+
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <ItemsWrapGrid Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                            </GridView>
+                        </Flyout.Content>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+            
+            
+            
+            
+            <Button x:ConnectionId='7' x:Name="ScopeButton"  Grid.Row="3"  Grid.Column="1" Grid.ColumnSpan="3" Content="{Binding Setup.Scope.Name,TargetNullValue='Select a Scope'}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Button.Flyout>
+                    <Flyout Placement="Top">
+                        <Flyout.Content>
+
+                            <GridView x:ConnectionId='9' x:Name="ScopeGridView" 
+                                          ItemTemplate="{StaticResource Standard310x260ItemTemplate}" 
+                                          ItemsSource="{Binding Setup.Gun.PossibleScopes}"
+                                          IsItemClickEnabled="{Binding IsEditable}"
+                                          >
+                            <Interactivity:Interaction.Behaviors>
+                                <Core:EventTriggerBehavior EventName="ItemClick">
+                                    <Core:CallMethodAction MethodName="SelectScopeCommand" 
+                TargetObject="{Binding Mode=OneWay}" />
+                                </Core:EventTriggerBehavior>
+                            </Interactivity:Interaction.Behaviors>
+                            <GridView.GroupStyle>
+                                    <GroupStyle>
+                                        <GroupStyle.HeaderTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Name}"/>
+                                            </DataTemplate>
+                                        </GroupStyle.HeaderTemplate>
+                                    </GroupStyle>
+                                </GridView.GroupStyle>
+
+                                <GridView.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <ItemsWrapGrid Orientation="Horizontal"/>
+                                    </ItemsPanelTemplate>
+                                </GridView.ItemsPanel>
+                            </GridView>
+                        </Flyout.Content>
+                    </Flyout>
+                </Button.Flyout>
+            </Button>
+
+        <CommandBar Grid.Row="5" Grid.ColumnSpan="5" HorizontalContentAlignment="Center" Background="Transparent" >
+            <AppBarButton x:ConnectionId='8' Icon="Accept"                            IsEnabled="{Binding IsSaved}"/>
+            <AppBarButton Icon="Add" Command="{Binding SaveSetupCommand}"/>
+        </CommandBar>
+            
+        </Grid>
+    
+</UserControl>
+

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>APPBUILDER</Machine>
+    <WindowsUser>Kellan</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>15d53b34-c1de-40d8-9616-74693066b33e</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\obj\x86\Release\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>0DC4CD384AF3116CCF1D3B0B28E8DAFE21ABCC925B17FD532111FDAC1DF4C2EF</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>15d53b34-c1de-40d8-9616-74693066b33e_1.0.0.0_x86__w2ay28tdepxsm</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>15d53b34-c1de-40d8-9616-74693066b33e_w2ay28tdepxsm!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>15d53b34-c1de-40d8-9616-74693066b33e</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Kellan</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-10-18T18:30:49.127</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\ApplicationInsights.config">
+      <PackagePath>ApplicationInsights.config</PackagePath>
+      <Modified>2015-09-18T00:22:43.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\COOLCamo2.png">
+      <PackagePath>Assets\COOLCamo2.png</PackagePath>
+      <Modified>2015-10-01T18:09:35.836</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-08-27T08:38:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\ClrCompression.dll">
+      <PackagePath>ClrCompression.dll</PackagePath>
+      <Modified>2015-08-23T01:52:16.581</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\mySpotter.dll">
+      <PackagePath>mySpotter.dll</PackagePath>
+      <Modified>2015-10-18T18:30:48.258</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\mySpotter.exe">
+      <PackagePath>mySpotter.exe</PackagePath>
+      <Modified>2015-10-18T18:30:49.105</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\mySpotterLibrary\Common\ReadMe.txt">
+      <PackagePath>mySpotterLibrary\Common\ReadMe.txt</PackagePath>
+      <Modified>2015-10-13T07:07:22.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\mySpotterLibrary\DefaultData\AmmoData - Copy.json">
+      <PackagePath>mySpotterLibrary\DefaultData\AmmoData - Copy.json</PackagePath>
+      <Modified>2015-10-01T18:06:07.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-10-18T18:11:57.542</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2015-10-18T05:24:21.782</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\_Resources\0.rsrc">
+      <PackagePath>_Resources\0.rsrc</PackagePath>
+      <Modified>2015-10-18T18:30:04.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\_Resources\1.rsrc">
+      <PackagePath>_Resources\1.rsrc</PackagePath>
+      <Modified>2015-10-18T18:30:04.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\_Resources\2.rsrc">
+      <PackagePath>_Resources\2.rsrc</PackagePath>
+      <Modified>2015-10-18T18:30:04.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\_Resources\3.rsrc">
+      <PackagePath>_Resources\3.rsrc</PackagePath>
+      <Modified>2015-10-18T18:30:04.413</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Kellan\Documents\Visual Studio 2015\Projects\mySpotter\mySpotter\bin\x86\Release\ilc\_Resources\index.txt">
+      <PackagePath>_Resources\index.txt</PackagePath>
+      <Modified>2015-10-18T18:30:04.413</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.22929.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.22929.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.22929.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\">
+      <Name>Microsoft.NET.Native.Runtime.1.1</Name>
+      <Version>1.1.23231.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.1, MinVersion = 1.1.23231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\.\AppX\ARM\Microsoft.NET.Native.Runtime.1.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\">
+      <Name>Microsoft.NET.Native.Runtime.1.1</Name>
+      <Version>1.1.23231.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.1, MinVersion = 1.1.23231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\.\AppX\x64\Microsoft.NET.Native.Runtime.1.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\">
+      <Name>Microsoft.NET.Native.Runtime.1.1</Name>
+      <Version>1.1.23231.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.1, MinVersion = 1.1.23231.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\.\AppX\x86\Microsoft.NET.Native.Runtime.1.1.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

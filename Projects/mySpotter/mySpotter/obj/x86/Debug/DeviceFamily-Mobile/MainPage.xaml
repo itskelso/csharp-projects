@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="mySpotter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:mySpotter"
+    xmlns:views="using:mySpotter.Views"
+    xmlns:viewmodels="using:mySpotterLibrary.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <viewmodels:MainPageViewModel x:Key="ViewModel"></viewmodels:MainPageViewModel>
+        <viewmodels:UserGunSetupViewModel x:Key="UserSetupViewModel"/>
+        <views:UserGunSetupView x:Key="SetupView"/>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" DataContext="{StaticResource ViewModel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="mySummary"/>
+        
+        <views:UserGunSetupView x:ConnectionId='1' x:Name="SetupEditor" Grid.Row="2"/>
+        
+        <views:PiManagerView x:ConnectionId='2' x:Name="PiManager" Grid.Row="3"/>
+        
+    </Grid>
+</Page>
+

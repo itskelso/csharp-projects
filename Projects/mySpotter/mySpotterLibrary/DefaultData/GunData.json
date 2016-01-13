@@ -1,0 +1,717 @@
+{
+    "GunGroups": [
+        {
+            "Name": "Assault Rifles",
+            "SubTitle": "Group SubTitle: 1",
+            "ImagePath": "Assets/DarkGray.png",
+            "Description": "Assault!",
+            "Guns": [
+                {
+                    
+                    "Name": "AK-47",
+                    "SubTitle": "The works anywhere gun",
+                    "ImagePath": "ms-appx:///Assets/GunPics/AK-47.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22" },                         
+                        { "Name": ".38" },
+                        { "Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "AR-15",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "ms-appx:///Assets/GunPics/AR-15.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "M4A1",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "ms-appx:///Assets/GunPics/M4A1.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Scar",
+                    "SubTitle": "Item SubTitle: 4",
+                    "ImagePath": "ms-appx:///Assets/GunPics/Scar.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "M4 Carbine",
+                    "SubTitle": "Item SubTitle: 5",
+                    "ImagePath": "ms-appx:///Assets/GunPics/M4 Carbine.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "Name": "Sub Machine Guns",
+            "SubTitle": "SMGs",
+            "ImagePath": "Assets/LightGray.png",
+            "Description": "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante",
+            "Guns": [
+                {
+                    
+                    "Name": "MP5K",
+                    "SubTitle": "Item SubTitle: 1",
+                    "ImagePath": "ms-appx:///Assets/GunPics/MP5.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "SMG2",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "SMG3",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "Name": "Sniper Rifles",
+            "SubTitle": "Snipers",
+            "ImagePath": "Assets/MediumGray.png",
+            "Description": "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante",
+            "Guns": [
+                {
+                    
+                    "Name": "Barrett 50Cal",
+                    "SubTitle": "Item SubTitle: 1",
+                    "ImagePath": "ms-appx:///Assets/GunPics/Barrett50.jpeg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 2",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 3",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 4",
+                    "SubTitle": "Item SubTitle: 4",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 5",
+                    "SubTitle": "Item SubTitle: 5",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 6",
+                    "SubTitle": "Item SubTitle: 6",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Sniper: 7",
+                    "SubTitle": "Item SubTitle: 7",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "Name": "Pistols",
+            "SubTitle": "Dont hold these sideways",
+            "ImagePath": "Assets/MediumGray.png",
+            "Description": "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante",
+            "Guns": [
+                {
+                    
+                    "Name": "Glock 17",
+                    "SubTitle": "Item SubTitle: 1",
+                    "ImagePath": "ms-appx:///Assets/Glock17.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "9mm",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": ".357 Mag",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Colt .45",
+                    "SubTitle": "Item SubTitle: 4",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Desert Eagle",
+                    "SubTitle": "The Deagle",
+                    "ImagePath": "ms-appx:///Assets/GunPics/Desert Eagle.jpg",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                   
+                    "Name": "Pistol: 6",
+                    "SubTitle": "Item SubTitle: 6",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "Name": "Shotguns",
+            "SubTitle": "shottys",
+            "ImagePath": "Assets/MediumGray.png",
+            "Description": "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante",
+            "Guns": [
+                {
+                    
+                    "Name": "12 Gauge",
+                    "SubTitle": "Item SubTitle: 1",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "20 Gauge",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Shotgun: 3",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Shotgun: 4",
+                    "SubTitle": "Item SubTitle: 4",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        },
+        {
+            
+            "Name": "Paintball Guns: 6",
+            "SubTitle": "Group SubTitle: 6",
+            "ImagePath": "Assets/MediumGray.png",
+            "Description": "Group Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor scelerisque lorem in vehicula. Aliquam tincidunt, lacus ut sagittis tristique, turpis massa volutpat augue, eu rutrum ligula ante a ante",
+            "Guns": [
+                {
+                    
+                    "Name": "paint1",
+                    "SubTitle": "Item SubTitle: 1",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 2",
+                    "SubTitle": "Item SubTitle: 2",
+                    "ImagePath": "Assets/MediumGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 3",
+                    "SubTitle": "Item SubTitle: 3",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 4",
+                    "SubTitle": "Item SubTitle: 4",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 5",
+                    "SubTitle": "Item SubTitle: 5",
+                    "ImagePath": "Assets/LightGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 6",
+                    "SubTitle": "Item SubTitle: 6",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                      { "Name": ".22" },
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 7",
+                    "SubTitle": "Item SubTitle: 7",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                },
+                {
+                    
+                    "Name": "Paint: 8",
+                    "SubTitle": "Item SubTitle: 8",
+                    "ImagePath": "Assets/DarkGray.png",
+                    "Description": "Item Description:",
+                    "PossibleAmmo": [
+                        { "Name": ".22"}, 
+                        { "Name": ".38"}, 
+                        {"Name": ".50" }
+                    ],
+                    "PossibleScopes": [
+                        { "Name": "X2"},
+                        { "Name": "X4"},
+                        { "Name": "X6"},
+                        { "Name": "X10"},
+                        { "Name": "No Scope"}
+
+                    ]
+                }
+            ]
+        }
+    ]
+}

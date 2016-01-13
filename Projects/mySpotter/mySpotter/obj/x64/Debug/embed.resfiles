@@ -1,0 +1,12 @@
+App.xbf
+DeviceFamily-Mobile\MainPage.xbf
+MainPage.xbf
+Navigation\MyTitleBar.xbf
+Navigation\NavigationRootPage.xbf
+Views\LoginControl.xbf
+Views\MainPageView.xbf
+Views\PiManagerView.xbf
+Views\RecentHistoryView.xbf
+Views\SessionPage.xbf
+Views\SetupSessionView.xbf
+Views\UserGunSetupView.xbf
