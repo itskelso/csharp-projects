@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6DC7BB7D-CBCF-4389-9567-373DDF3AC5AE}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TableCrib</RootNamespace>
+    <AssemblyName>TableCrib</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>TableCrib_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Class1.cs" />
+    <Compile Include="Helpers\Class1.cs" />
+    <Compile Include="Helpers\DatabaseHelper.cs" />
+    <Compile Include="Helpers\StoryboardExtensions.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardModel.cs" />
+    <Compile Include="Models\CardScoreAnimationModel.cs" />
+    <Compile Include="Models\DeckModel.cs" />
+    <Compile Include="Models\DiagonalHandSetModel.cs" />
+    <Compile Include="Models\HandModel.cs" />
+    <Compile Include="Models\HandSetModel.cs" />
+    <Compile Include="Models\HorizontalHandSetModel.cs" />
+    <Compile Include="Models\PegAnimationModel.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\ScoreFlyoutAnimationModel.cs" />
+    <Compile Include="Models\ScoringHandModel.cs" />
+    <Compile Include="Models\VerticalHandSetModel.cs" />
+    <Compile Include="MyTitleBar.xaml.cs" />
+    <Compile Include="NavigationRootPage.xaml.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\GameBoardViewModel.cs" />
+    <Compile Include="ViewModels\GameTableViewModel.cs" />
+    <Compile Include="ViewModels\GameViewModel.cs" />
+    <Compile Include="ViewModels\PlayersViewModel.cs" />
+    <Compile Include="Views\BlankPage1.xaml.cs">
+      <DependentUpon>BlankPage1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="TableCrib_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CardImages\AceClubs.png" />
+    <Content Include="CardImages\AceDiamonds.png" />
+    <Content Include="CardImages\AceHearts.png" />
+    <Content Include="CardImages\AceSpades.png" />
+    <Content Include="CardImages\CardBack1.png" />
+    <Content Include="CardImages\EightClubs.png" />
+    <Content Include="CardImages\EightDiamonds.png" />
+    <Content Include="CardImages\EightHearts.png" />
+    <Content Include="CardImages\EightSpades.png" />
+    <Content Include="CardImages\FiveClubs.png" />
+    <Content Include="CardImages\FiveDiamonds.png" />
+    <Content Include="CardImages\FiveHearts.png" />
+    <Content Include="CardImages\FiveSpades.png" />
+    <Content Include="CardImages\FourClubs.png" />
+    <Content Include="CardImages\FourDiamonds.png" />
+    <Content Include="CardImages\FourHearts.png" />
+    <Content Include="CardImages\FourSpades.png" />
+    <Content Include="CardImages\JackClubs.png" />
+    <Content Include="CardImages\JackDiamonds.png" />
+    <Content Include="CardImages\JackHearts.png" />
+    <Content Include="CardImages\JackSpades.png" />
+    <Content Include="CardImages\KingClubs.png" />
+    <Content Include="CardImages\KingDiamonds.png" />
+    <Content Include="CardImages\KingHearts.png" />
+    <Content Include="CardImages\KingSpades.png" />
+    <Content Include="CardImages\NineClubs.png" />
+    <Content Include="CardImages\NineDiamonds.png" />
+    <Content Include="CardImages\NineHearts.png" />
+    <Content Include="CardImages\NineSpades.png" />
+    <Content Include="CardImages\QueenClubs.png" />
+    <Content Include="CardImages\QueenDiamonds.png" />
+    <Content Include="CardImages\QueenHearts.png" />
+    <Content Include="CardImages\QueenSpades.png" />
+    <Content Include="CardImages\SevenClubs.png" />
+    <Content Include="CardImages\SevenDiamonds.png" />
+    <Content Include="CardImages\SevenHearts.png" />
+    <Content Include="CardImages\SevenSpades.png" />
+    <Content Include="CardImages\SixClubs.png" />
+    <Content Include="CardImages\SixDiamonds.png" />
+    <Content Include="CardImages\SixHearts.png" />
+    <Content Include="CardImages\SixSpades.png" />
+    <Content Include="CardImages\TenClubs.png" />
+    <Content Include="CardImages\TenDiamonds.png" />
+    <Content Include="CardImages\TenHearts.png" />
+    <Content Include="CardImages\TenSpades.png" />
+    <Content Include="CardImages\ThreeClubs.png" />
+    <Content Include="CardImages\ThreeDiamonds.png" />
+    <Content Include="CardImages\ThreeHearts.png" />
+    <Content Include="CardImages\ThreeSpades.png" />
+    <Content Include="CardImages\TwoClubs.png" />
+    <Content Include="CardImages\TwoDiamonds.png" />
+    <Content Include="CardImages\TwoHearts.png" />
+    <Content Include="CardImages\TwoSpades.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyTitleBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NavigationRootPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\BlankPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.UAP.2015, Version=3.9.1">
+      <Name>SQLite for Universal App Platform</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsDesktop, Version=10.0.10240.0">
+      <Name>Windows Desktop Extensions for the UWP</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsIoT, Version=10.0.10240.0">
+      <Name>Windows IoT Extensions for the UWP</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsMobile, Version=10.0.10240.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsTeam, Version=10.0.10240.0">
+      <Name>Windows Team Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
